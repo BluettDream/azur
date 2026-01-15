@@ -69,7 +69,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # 网站标题, 用于 Open Graph 和 Twitter Cards
   title = "Azur's Blog"
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
-  description = "This is Azur's personal blog."
+  description = "This is Azur's blog."
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = ["/logo.png"]
 
@@ -88,15 +88,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  页面头部导航栏标题配置
     [params.header.title]
       # LOGO 的 URL
-      logo = ""
+      logo = "https://raw.githubusercontent.com/BluettDream/ImgBed/master/blog/logo.png"
       # 标题名称
-      name = ""
+      name = "Azur's Blog"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
       #  是否为标题显示打字机动画
-      typeit = true
+      typeit = false
 
   # 页面底部信息配置
   [params.footer]
@@ -137,7 +137,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "我的网站"
+    title = "Azur's Blog"
     # 是否隐藏网站图标资源链接
     noFavicon = false
     # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
@@ -181,11 +181,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = ""
       # 主页显示头像的 URL
-      avatarURL = "/images/avatar.png"
+      avatarURL = "https://raw.githubusercontent.com/BluettDream/ImgBed/master/blog/logo.png"
       #  主页显示的网站标题 (支持 HTML 格式)
-      title = ""
+      title = "Azur"
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "这是我的全新 Hugo 网站"
+      subtitle = "Welcome to Azur's blog!"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -204,87 +204,87 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # 作者的社交信息设置
   [params.social]
-    GitHub = "xxxx"
-    Linkedin = ""
-    X = "xxxx" # 
+    GitHub = "https://github.com/BluettDream"
+    # Linkedin = ""
+    # X = "xxxx" # 
     Twitter = ""  
-    Instagram = "xxxx"
-    Facebook = "xxxx"
-    Telegram = "xxxx"
-    Medium = ""
+    # Instagram = "xxxx"
+    # Facebook = "xxxx"
+    # Telegram = "xxxx"
+    # Medium = ""
     Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
+    # Youtubelegacy = ""
+    # Youtubecustom = ""
+    # Youtubechannel = ""
+    # Tumblr = ""
+    # Quora = ""
+    # Keybase = ""
+    # Pinterest = ""
+    # Reddit = ""
+    # Codepen = ""
+    # FreeCodeCamp = ""
+    # Bitbucket = ""
     Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
+    # Weibo = ""
+    # Odnoklassniki = ""
+    # VK = ""
+    # Flickr = ""
+    # Xing = ""
+    # Snapchat = ""
+    # Soundcloud = ""
+    # Spotify = ""
+    # Bandcamp = ""
+    # Paypal = ""
+    # Fivehundredpx = ""
+    # Mix = ""
+    # Goodreads = ""
+    # Lastfm = ""
+    # Foursquare = ""
+    # Hackernews = ""
+    # Kickstarter = ""
+    # Patreon = ""
     Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
+    # Twitch = ""
+    # Strava = ""
+    # Skype = ""
+    # Whatsapp = ""
     Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
+    # Douban = ""
+    # Angellist = ""
+    # Slidershare = ""
+    # Jsfiddle = ""
+    # Deviantart = ""
+    # Behance = ""
+    # Dribbble = ""
+    # Wordpress = ""
+    # Vine = ""
+    # Googlescholar = ""
+    # Researchgate = ""
+    # Mastodon = ""
+    # Thingiverse = ""
+    # Devto = ""
+    # Gitea = ""
+    # XMPP = ""
+    # Matrix = ""
     Bilibili = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    ORCID = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki = ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe = ""
-    Malt = "" # 
-    TikTok = "" # 
-    TryHackMe = "" # 
-    Codeberg = "" # 
-    HuggingFace = "" # 
-    Threads = "" # 
-    Phone = ""
-    Email = "xxxx@xxxx.com"
+    # Discord = ""
+    # DiscordInvite = ""
+    # Lichess = ""
+    # ORCID = ""
+    # Pleroma = ""
+    # Kaggle = ""
+    # MediaWiki = ""
+    # Plume = ""
+    # HackTheBox = ""
+    # RootMe = ""
+    # Malt = "" # 
+    # TikTok = "" # 
+    # TryHackMe = "" # 
+    # Codeberg = "" # 
+    # HuggingFace = "" # 
+    # Threads = "" # 
+    # Phone = ""
+    Email = "azur.tian@qq.com"
     RSS = true # 
 
   #  文章页面全局配置
@@ -358,31 +358,31 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  文章页面的分享信息设置
     [params.page.share]
       enable = true
-      X = true # 
+      X = false # 
       Twitter = false # 
-      Threads = true # 
+      Threads = false # 
       Facebook = true
       Linkedin = false
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Flipboard = false
       Weibo = true
       Blogger = false
-      Baidu = false
+      Baidu = true
       Odnoklassniki = false
       Evernote = false
       Skype = false
       Trello = false
-      Diaspora = true # 
+      Diaspora = false # 
       Mix = false
       Telegram = true # 
 
@@ -397,10 +397,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gitalk 评论系统设置
       [params.page.comment.gitalk]
         enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
+        owner = "BluettDream"
+        repo = "https://github.com/BluettDream/azur"
+        clientId = "Ov23lit0TXG5JJxHwceD"
+        clientSecret = "4c52f2559fc97acc59078a4a3f98796ec904c428"
       # Valine 评论系统设置
       [params.page.comment.valine]
         enable = false
@@ -456,18 +456,18 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # giscus comment 评论系统设置 (https://giscus.app/zh-CN)
       [params.page.comment.giscus]
         # 你可以参考官方文档来使用下列配置
-        enable = false
-        repo = ""
-        repoId = ""
+        enable = true
+        repo = "BluettDream/azur"
+        repoId = "R_kgDOQ1t4Yw"
         category = "Announcements"
-        categoryId = ""
+        categoryId = "DIC_kwDOQ1t4Y84C0upU"
         # 为空时自动适配当前主题 i18n 配置
         lang = ""
         mapping = "pathname"
         reactionsEnabled = "1"
         emitMetadata = "0"
-        inputPosition = "bottom"
-        lazyLoading = false
+        inputPosition = "top"
+        lazyLoading = true
         lightTheme = "light"
         darkTheme = "dark"
 
@@ -490,8 +490,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       images = []
       # 出版者信息
       [params.page.seo.publisher]
-        name = ""
-        logoUrl = ""
+        name = "Azur"
+        logoUrl = "https://raw.githubusercontent.com/BluettDream/ImgBed/master/blog/logo.png"
 
   #  TypeIt 配置
   [params.typeit]
@@ -634,3 +634,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
