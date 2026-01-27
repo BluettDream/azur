@@ -1,16 +1,18 @@
-baseURL = "https://azur.github.io/"
+baseURL = "https://bluettdream.github.io/azur/"
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
 # 网站标题
-title = "Azur's Blog"
+# title = "Azur's Blog"
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
 # 语言名称 ["English", "简体中文", "Français", "Polski", ...]
 languageName = "简体中文"
+# 默认语言
+defaultContentLanguage = "zh-cn"
 # 是否包括中日韩文字
 hasCJKLanguage = true
 # 版权描述，仅仅用于 SEO
-copyright = ""
+copyright = "Azur © 2026"
 # 是否使用 robots.txt
 enableRobotsTXT = true
 # 是否使用 git 信息
@@ -20,13 +22,75 @@ enableEmoji = true
 # 忽略一些构建错误
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
+
+[languages]
+  [languages.en]
+    weight = 2
+    title = "Azur's Blog"
+    languageCode = "en"
+    languageName = "English"
+    [[languages.en.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = "Posts"
+    [[languages.en.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = "Tags"
+    [[languages.en.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Categories"
+      url = "/categories/"
+      title = "Categories"
+
+  [languages.zh-cn]
+    weight = 1
+    title = "Azur的博客"
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    hasCJKLanguage = true
+    [[languages.zh-cn.menu.main]]
+      weight = 1
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "文章"
+      url = "/posts/"
+      title = "文章"
+    [[languages.zh-cn.menu.main]]
+      weight = 2
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "标签"
+      url = "/tags/"
+      title = "标签"
+    [[languages.zh-cn.menu.main]]
+      weight = 3
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "分类"
+      url = "/categories/"
+      title = "分类"
+
 # 分页配置
 [pagination]
   disableAliases = false
   pagerSize = 10
   path = "page"
 
-# 菜单配置
 [menu]
   [[menu.main]]
     weight = 1
@@ -90,7 +154,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # LOGO 的 URL
       logo = "https://raw.githubusercontent.com/BluettDream/ImgBed/master/blog/logo.png"
       # 标题名称
-      name = "Azur's Blog"
+      name = "Azur的博客"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
@@ -183,9 +247,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 主页显示头像的 URL
       avatarURL = "https://raw.githubusercontent.com/BluettDream/ImgBed/master/blog/logo.png"
       #  主页显示的网站标题 (支持 HTML 格式)
-      title = "Azur"
+      title = "Azur's Blog"
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "Welcome to Azur's blog!"
+      subtitle = "Welcome to my blog—if you like it, please give it a star or share it~"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -204,7 +268,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # 作者的社交信息设置
   [params.social]
-    GitHub = "https://github.com/BluettDream"
+    GitHub = "BluettDream"
     # Linkedin = ""
     # X = "xxxx" # 
     Twitter = ""  
@@ -307,6 +371,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     linkToMarkdown = true
     #  是否在 RSS 中显示全文内容
     rssFullText = false
+    # 作者
+    author = "Azur"
+    # 作者链接
+    authorLink = "https://github.com/BluettDream"
 
     #  目录配置
     [params.page.toc]
@@ -315,7 +383,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  是否保持使用文章前面的静态目录
       keepStatic = false
       # 是否使侧边目录自动折叠展开
-      auto = true
+      auto = false
 
     #  代码配置
     [params.page.code]
@@ -388,7 +456,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
     #  评论系统设置
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus 评论系统设置
       [params.page.comment.disqus]
         enable = false
@@ -496,9 +564,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  TypeIt 配置
   [params.typeit]
     # 每一步的打字速度 (单位是毫秒)
-    speed = 100
+    speed = 80
     # 光标的闪烁速度 (单位是毫秒)
-    cursorSpeed = 1000
+    cursorSpeed = 800
     # 光标的字符 (支持 HTML 格式)
     cursorChar = "|"
     # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
@@ -515,9 +583,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  网站 SEO 配置
   [params.seo]
     # 图片 URL
-    image = ""
+    image = "https://raw.githubusercontent.com/BluettDream/ImgBed/master/blog/logo.png"
     # 缩略图 URL
-    thumbnailUrl = ""
+    thumbnailUrl = "https://raw.githubusercontent.com/BluettDream/ImgBed/master/blog/logo.png"
 
   #  网站分析配置
   [params.analytics]
